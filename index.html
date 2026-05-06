@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>My Simple Website</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:#f2f2f2;
+    }
+
+    header{
+      background:#003366;
+      color:white;
+      padding:15px;
+      text-align:center;
+    }
+
+    nav{
+      background:#0055aa;
+      padding:10px;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      margin:15px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .container{
+      padding:20px;
+      text-align:center;
+    }
+
+    button{
+      padding:10px 20px;
+      background:#003366;
+      color:white;
+      border:none;
+      cursor:pointer;
+      border-radius:5px;
+    }
+
+    footer{
+      background:#003366;
+      color:white;
+      text-align:center;
+      padding:10px;
+      position:fixed;
+      bottom:0;
+      width:100%;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<header>
+  <h1>Karibu Kwenye Website Yangu</h1>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+  <h2 id="msg">Bonyeza button hapa chini</h2>
+  <button onclick="changeText()">Bonyeza</button>
+</div>
+
+<footer>
+  © 2026 My Website
+</footer>
+
+<script>
+  function changeText(){
+    document.getElementById("msg").innerHTML =
+    "Umeona sasa HTML + CSS + JavaScript vinafanya kazi pamoja!";
+  }
+</script>
+
+</body>
+</html>
